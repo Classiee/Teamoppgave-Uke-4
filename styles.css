@@ -133,7 +133,7 @@ h1 {
     border: solid 1px black;
     overflow-y: auto;
 }
-.MainbuttonContainer {
+.button-container {
     display: flex;
     grid-area: button-container;
     justify-content: space-evenly;
