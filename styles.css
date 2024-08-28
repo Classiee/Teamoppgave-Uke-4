@@ -15,7 +15,7 @@ body {
     place-items: center;
     position: fixed;
     font-family: 'Open-sans', sans-serif;
-    background-image: url('/img/SimpleBarn.png');
+    background-image: url('/Assets/img/SimpleBarn.png');
     background-repeat: no-repeat;
     background-position: 20% -2%;
     background-size: 72%;
@@ -159,19 +159,19 @@ h1 {
 }
 
 #feedButton {
-    background-image: url('/img/utensil.png');
+    background-image: url('/Assets/img/utensil.png');
     background-size:contain;
     background-repeat: no-repeat;
 }
 
 #washButton {
-    background-image: url('/img/shower.png');
+    background-image: url('/Assets/img/shower.png');
     background-size:contain;
     background-repeat: no-repeat;
 }
 
 #playButton {
-    background-image: url('/img/play.png');
+    background-image: url('/Assets/img/play.png');
     background-size:contain;
     background-repeat: no-repeat;
 }
