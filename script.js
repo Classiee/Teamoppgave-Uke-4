@@ -174,8 +174,6 @@ function dead(){
     <img id="pet" src="img/deadChicken.png" alt="Pet">
     `;    
     clearInterval(minTimer);
-    
-
 }
 
 function popupRefresh(){
