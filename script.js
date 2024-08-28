@@ -62,18 +62,18 @@ if (playProgress == 50){
 
 
 if (foodProgress == 70) {
-    badHealth();
+    //medHealth();
     foodBar.style.backgroundColor = 'yellow';
     textContainer.innerHTML += `<li> Jeg kunne gjerne spist et egg nå! </li><br>`;
 }
 
 if (washProgress == 70) {
-    badHealth();
+    //medHealth();
     textContainer.innerHTML += `<li> Jeg trenger en kattevask! </li><br>`;
     washBar.style.backgroundColor = 'yellow';
 }
 if (playProgress == 70){
-    badHealth();
+    //medHealth();
     playBar.style.backgroundColor = 'yellow';
     textContainer.innerHTML += `<li> Kan man dø av kjedsomhet?! </li><br>`;
 }
@@ -175,7 +175,7 @@ function dead(){
     `;    
 
     clearInterval(minTimer);
-    // if (confirm("Dyret ble borte, vil du prøve på nytt?")==true) {
-    //     location.reload();
-    // }
+     if (confirm("Dyret ble borte, vil du prøve på nytt?")==true) {
+         location.reload();
+     }
 }
