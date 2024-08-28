@@ -27,15 +27,15 @@ if (foodProgress == -10 || washProgress == -10 || playProgress == -10){
     dead();
     textContainer.innerHTML += `<li> Ahhhhh, jeg døde! </li><br>`;
 }
-if (foodProgress <= 30) {
+if (foodProgress == 30) {
     badHealth();
     foodBar.style.backgroundColor = 'red';
 }
-if (washProgress <= 30) {
+if (washProgress == 30) {
     badHealth();
     washBar.style.backgroundColor = 'red';
 }
-if (playProgress <= 30){
+if (playProgress == 30){
     badHealth();
     playBar.style.backgroundColor = 'red';
 }
