@@ -23,14 +23,14 @@ function decay() {
     washProgress -= 5;
     playProgress -= 5;
     
-    if (playProgress == 0 || washProgress == 0 || foodProgress == 0) {
-        textContainer.innerHTML += `<li> Ahhhhh, jeg døde! </li><br>`;
-    }
+if (foodProgress == -10 || washProgress == -10 || playProgress == -10){
+    dead();
+    textContainer.innerHTML += `<li> Ahhhhh, jeg døde! </li><br>`;
+}
 if (foodProgress == 30) {
     badHealth();
     foodBar.style.backgroundColor = 'red';
 }
-
 if (washProgress == 30) {
     badHealth();
     washBar.style.backgroundColor = 'red';
@@ -78,10 +78,13 @@ if (playProgress == 70){
     textContainer.innerHTML += `<li> Kan man dø av kjedsomhet?! </li><br>`;
 }
 
-
-if (foodProgress == -10 || washProgress == -10 || playProgress == -10){
-    dead();
+if (foodProgress = 100 && playProgress >= 70) {
+    goodhealth();
 }
+if (washProgress = 100 && playProgress >= 70) {
+    goodhealth();
+}
+
 
 // For å redusere IF statements, og i tillegg gjøre funksjonen mer presis og pålitelig
 // (Kristian's input, NOT TO USE!)
