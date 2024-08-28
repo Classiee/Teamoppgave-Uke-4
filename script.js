@@ -22,7 +22,10 @@ function decay() {
     foodProgress -= 5;
     washProgress -= 5;
     playProgress -= 5;
-
+    
+    if (playProgress == 0 || washProgress == 0 || foodProgress == 0) {
+        textContainer.innerHTML += `<li> Ahhhhh, jeg døde! </li><br>`;
+    }
 if (foodProgress == 30) {
     badHealth();
     foodBar.style.backgroundColor = 'red';
@@ -36,69 +39,43 @@ if (playProgress == 30){
     badHealth();
     playBar.style.backgroundColor = 'red';
 }
-
-
-
-
-if (foodProgress == 45) {
-   // medHealthMinus();
-    foodBar.style.backgroundColor = 'orange';
-}
-if (washProgress == 45) {
-   // medHealthMinus();
-    washBar.style.backgroundColor = 'orange';
-}
-if (playProgress == 45){
-   // medHealthMinus();
-    playBar.style.backgroundColor = 'orange';
-}
-/**/
-
-if (playProgress == 0 || washProgress == 0 || foodProgress == 0) {
-    textContainer.innerHTML += `<li> Ahhhhh, jeg døde! </li><br>`;
-}
-
 if (playProgress == 30 || washProgress == 30 || foodProgress == 30) {
     textContainer.innerHTML += `<li> Hjelp, jeg dør! </li><br>`;
 }
-
-if (playProgress == 50) {
-    textContainer.innerHTML += `<li> Lek med meg! </li><br>`;
-}
-
-if (washProgress == 50) {
-    textContainer.innerHTML += `<li> Jeg trenger en runde med hageslangen! </li><br>`;
-}
- 
 if (foodProgress == 50) {
+   // medHealthMinus();
+    foodBar.style.backgroundColor = 'orange';
     textContainer.innerHTML += `<li> Jeg er sulten, gi meg noen kyllingvinger! </li><br>`;
 }
-
-if (playProgress == 80) {
-    textContainer.innerHTML += `<li> Kan man dø av kjedsomhet?! </li><br>`;
+if (washProgress == 50) {
+   // medHealthMinus();
+    washBar.style.backgroundColor = 'orange';
+    textContainer.innerHTML += `<li> Jeg trenger en runde med hageslangen! </li><br>`;
 }
-
-if (washProgress == 80) {
-   textContainer.innerHTML += `<li> Jeg trenger en kattevask! </li><br>`;
+if (playProgress == 50){
+   // medHealthMinus();
+    playBar.style.backgroundColor = 'orange';
+    textContainer.innerHTML += `<li> Lek med meg! </li><br>`;
 }
+/**/
 
-if (foodProgress == 80) {
-    textContainer.innerHTML += `<li> Jeg kunne gjerne spist et egg nå! </li><br>`;
-}
 
 
 if (foodProgress == 70) {
     badHealth();
     foodBar.style.backgroundColor = 'yellow';
+    textContainer.innerHTML += `<li> Jeg kunne gjerne spist et egg nå! </li><br>`;
 }
 
 if (washProgress == 70) {
     badHealth();
+    textContainer.innerHTML += `<li> Jeg trenger en kattevask! </li><br>`;
     washBar.style.backgroundColor = 'yellow';
 }
 if (playProgress == 70){
     badHealth();
     playBar.style.backgroundColor = 'yellow';
+    textContainer.innerHTML += `<li> Kan man dø av kjedsomhet?! </li><br>`;
 }
 
 
