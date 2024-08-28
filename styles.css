@@ -1,4 +1,4 @@
-#body {
+body {
     display: grid;
     grid-template-areas: 
         "header header header"
@@ -56,10 +56,10 @@ h1 {
     
 }
 
-#textContainer2{
+#textContainer2 {
     margin-top: 100px;
 }
-#text{
+#text {
     color:tomato;
 }
 #playBar {
@@ -133,7 +133,7 @@ h1 {
     border: solid 1px black;
     overflow-y: auto;
 }
-.button-container {
+.MainbuttonContainer {
     display: flex;
     grid-area: button-container;
     justify-content: space-evenly;
@@ -142,7 +142,7 @@ h1 {
     margin-bottom: 30px;
 
 }
-.button-container button{
+.button-container button {
     padding: 20px 100px;
     background-color: rgb(222, 222, 222);
     border: none;
@@ -153,26 +153,26 @@ h1 {
     border: solid 1px black;
     background-position: right center;
 }
-.button-container button:hover{
+.button-container button:hover {
     background-color: rgb(96, 96, 96);
     color: #fff;
     border-radius: 15px;
 }
 
 #feedButton {
-    background-image: url("/img/utensil.png");
+    background-image: url(/img/utensil.png);
     background-size:contain;
     background-repeat: no-repeat;
 }
 
 #washButton {
-    background-image: url("/img/shower.png");
+    background-image: url(/img/shower.png);
     background-size:contain;
     background-repeat: no-repeat;
 }
 
 #playButton {
-    background-image: url("/img/play.png");
+    background-image: url(/img/play.png);
     background-size:contain;
     background-repeat: no-repeat;
 }

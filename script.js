@@ -78,10 +78,14 @@ if (playProgress == 70){
     textContainer.innerHTML += `<li> Kan man dø av kjedsomhet?! </li><br>`;
 }
 
-if (foodProgress = 100 && playProgress >= 70) {
+if (foodProgress == 100 && foodProgress >= 70) {
     goodhealth();
 }
-if (washProgress = 100 && playProgress >= 70) {
+if (playProgress == 100 && playProgress >= 70) {
+    goodhealth();
+}
+
+if (washProgress == 100 && washProgress >= 70) {
     goodhealth();
 }
 
