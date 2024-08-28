@@ -86,16 +86,16 @@ h1 {
 
 }
 #healthColor {
-    background-color: rgb(236, 78, 78);
+    background-color: lightgreen;
 }
 
 #washColor {
-    background-color: rgb(93, 156, 177);
+    background-color: lightgreen;
     
 }
 
 #playColor {
-    background-color: lightyellow;
+    background-color: lightgreen;
 }
 
 
@@ -175,5 +175,10 @@ h1 {
     background-image: url(img/play.png);
     background-size:contain;
     background-repeat: no-repeat;
+}
+
+#StartOverButton {
+    position: 50% 50%;
+    transform: translate(535%, 50%);
 }
 

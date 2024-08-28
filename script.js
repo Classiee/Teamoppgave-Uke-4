@@ -27,15 +27,15 @@ if (foodProgress == -10 || washProgress == -10 || playProgress == -10){
     dead();
     textContainer.innerHTML += `<li> Ahhhhh, jeg døde! </li><br>`;
 }
-if (foodProgress == 30) {
+if (foodProgress <= 30) {
     badHealth();
     foodBar.style.backgroundColor = 'red';
 }
-if (washProgress == 30) {
+if (washProgress <= 30) {
     badHealth();
     washBar.style.backgroundColor = 'red';
 }
-if (playProgress == 30){
+if (playProgress <= 30){
     badHealth();
     playBar.style.backgroundColor = 'red';
 }
@@ -43,17 +43,17 @@ if (playProgress == 30 || washProgress == 30 || foodProgress == 30) {
     textContainer.innerHTML += `<li> Hjelp, jeg dør! </li><br>`;
 }
 if (foodProgress == 50) {
-   // medHealthMinus();
+    badHealth();
     foodBar.style.backgroundColor = 'orange';
     textContainer.innerHTML += `<li> Jeg er sulten, gi meg noen kyllingvinger! </li><br>`;
 }
 if (washProgress == 50) {
-   // medHealthMinus();
+    badHealth();
     washBar.style.backgroundColor = 'orange';
     textContainer.innerHTML += `<li> Jeg trenger en runde med hageslangen! </li><br>`;
 }
 if (playProgress == 50){
-   // medHealthMinus();
+    badHealth();
     playBar.style.backgroundColor = 'orange';
     textContainer.innerHTML += `<li> Lek med meg! </li><br>`;
 }
@@ -78,16 +78,16 @@ if (playProgress == 70){
     textContainer.innerHTML += `<li> Kan man dø av kjedsomhet?! </li><br>`;
 }
 
-if (foodProgress == 100 && foodProgress >= 70) {
-    goodhealth();
-}
-if (playProgress == 100 && playProgress >= 70) {
-    goodhealth();
-}
+// if (foodProgress == 100 && foodProgress >= 70) {
+//     goodhealth();
+// }
+// if (playProgress == 100 && playProgress >= 70) {
+//     goodhealth();
+// }
 
-if (washProgress == 100 && washProgress >= 70) {
-    goodhealth();
-}
+// if (washProgress == 100 && washProgress >= 70) {
+//     goodhealth();
+// }
 
 
 // For å redusere IF statements, og i tillegg gjøre funksjonen mer presis og pålitelig
@@ -150,7 +150,7 @@ function dirty(){
 
 function goodHealth(){
     imageContainer.innerHTML = `
-    <img id="pet" src="/img/happyChicken.png" alt="Pet">
+    <img id="pet" src="img/happyChicken.png" alt="Pet">
     `;    
     }
 /*function medHealth() {
@@ -173,9 +173,11 @@ function dead(){
    imageContainer.innerHTML = `
     <img id="pet" src="img/deadChicken.png" alt="Pet">
     `;    
-
     clearInterval(minTimer);
-     if (confirm("Dyret ble borte, vil du prøve på nytt?")==true) {
-         location.reload();
-     }
+    
+
+}
+
+function popupRefresh(){
+      location.reload();   
 }
