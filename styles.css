@@ -15,7 +15,7 @@ body {
     place-items: center;
     position: fixed;
     font-family: 'Open-sans', sans-serif;
-    background-image: url("/img/SimpleBarn.png");
+    background-image: url(/img/SimpleBarn.png);
     background-repeat: no-repeat;
     background-position: 20% -2%;
     background-size: 72%;
