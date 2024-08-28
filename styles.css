@@ -132,7 +132,7 @@ h1 {
     position: relative;
     border: solid 1px black;
 }
-.button-container{
+.button-container {
     display: flex;
     grid-area: button-container;
     justify-content: space-evenly;
