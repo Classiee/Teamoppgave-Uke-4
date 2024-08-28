@@ -41,15 +41,15 @@ if (playProgress == 30){
 
 
 if (foodProgress == 45) {
-    medHealthMinus();
+   // medHealthMinus();
     foodBar.style.backgroundColor = 'orange';
 }
 if (washProgress == 45) {
-    medHealthMinus();
+   // medHealthMinus();
     washBar.style.backgroundColor = 'orange';
 }
 if (playProgress == 45){
-    medHealthMinus();
+   // medHealthMinus();
     playBar.style.backgroundColor = 'orange';
 }
 /**/

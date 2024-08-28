@@ -131,6 +131,7 @@ h1 {
     margin-inline-start: auto;
     position: relative;
     border: solid 1px black;
+    overflow-y: auto;
 }
 .button-container {
     display: flex;
